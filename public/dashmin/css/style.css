@@ -1,8 +1,14 @@
+.footer{
+    position: fixed;
+    bottom: 10px;
+}
+
 /********** Template CSS **********/
 :root {
     --primary: #009CFF;
     --light: #F3F6F9;
     --dark: #191C24;
+    --danger: #dc3545;
 }
 
 .back-to-top {
@@ -123,6 +129,15 @@
 
 /*** Navbar ***/
 .sidebar .navbar .navbar-nav .nav-link {
+    padding: 7px 20px;
+    color: var(--dark);
+    font-weight: 500;
+    border-left: 3px solid var(--light);
+    border-radius: 0 30px 30px 0;
+    outline: none;
+}
+
+.sidebar .navbar .navbar-nav .nav-link .logout{
     padding: 7px 20px;
     color: var(--dark);
     font-weight: 500;
