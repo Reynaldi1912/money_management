@@ -11,7 +11,7 @@
 
 
         <!-- Sidebar Start -->
-        @include('layouts.sidebar')
+        <!-- @include('layouts.sidebar') -->
         <!-- Sidebar End -->
 
 
