@@ -3,6 +3,14 @@
     bottom: 10px;
 }
 
+.text-logout{
+    color: #dc3545;
+}
+.text-logout:hover{
+    color: var(--light);
+    background-color: #dc3545;
+}
+
 /********** Template CSS **********/
 :root {
     --primary: #009cff;
