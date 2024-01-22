@@ -38,17 +38,18 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid pt-4 px-4">
-        <div class="row g-4">
-            <table>
-                <th>1</th>
-            </table>
-        </div>
+</div>
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <table>
+            <th>1</th>
+        </table>
     </div>
-    <!-- Sale & Revenue End -->
+</div>
+<!-- Sale & Revenue End -->
 
-    <!-- Footer Start -->
-    @include('layouts.footer')
-    <!-- Footer End -->
+<!-- Footer Start -->
+@include('layouts.footer')
+<!-- Footer End -->
 </div>
 @endsection('content')
