@@ -27,24 +27,54 @@
 	<link rel="stylesheet" type="text/css" href="/Login_v3/css/main.css">
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <!--===============================================================================================-->
+<style>
+    .fixed-notification {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 30%; /* Sesuaikan lebar notifikasi */
+        z-index: 1000; /* Pastikan notifikasi muncul di atas elemen lain */
+    }
+
+    @media (max-width: 768px) {
+        .fixed-notification {
+            width: 80%; /* Sesuaikan lebar notifikasi untuk layar kecil */
+        }
+    }
+</style>
 </head>
 <body>
-	
+@if(session('success'))
+		<div class="fixed-notification alert alert-success alert-dismissible fade show" role="alert">
+			<strong>Success:</strong> {{ session('success') }}
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	@endif
+	@if(session('error'))
+		<div class="fixed-notification alert alert-danger alert-dismissible fade show" role="alert">
+			<strong>Error:</strong> {{ session('error') }}
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	@endif
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('/Login_v3/images/bg-01.jpg');">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-			
+				<form class="login100-form validate-form" action="{{route('register')}}" method="post">
+				@csrf
 					<span class="login100-form-title p-b-50 p-t-27">
 						Register Akun Baru
 					</span>
-					<h6 class="text-white">
+					<h6 class="text-white p-b-10">
 						<b>Informasi Akun</b>
 						<hr style="border-color: #fff;">
 					</h6>
 
 					<div class="wrap-input100 validate-input" data-validate = "Masukan Nama Lengkap">
-						<input class="input100" type="text" name="nama_lengkap" placeholder="Nama Lengkap">
+						<input class="input100" type="text" name="full_name" placeholder="Nama Lengkap">
 						<span class="focus-input100" data-placeholder="&#xf2bc;"></span>
 					</div>
 
@@ -58,11 +88,6 @@
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Masukan Ulang Password">
-						<input class="input100" type="text" name="password" placeholder="Ulangi Password">
-						<span class="focus-input100" data-placeholder="&#xf191;"></span>
-					</div>
-
 					<h6 class="text-white  p-t-27">
 						<b>Pemulihan Akun</b>
 						<hr style="border-color: #fff;">
@@ -70,7 +95,7 @@
 
 				
 					<div class="wrap-input100 validate-input" data-validate="Pertanyaan Pemulihan Password">
-						<select class="form-control" type="text" name="pemulihan_password" placeholder="Password">
+						<select class="form-control" type="text" name="pertanyaan" placeholder="Password">
 							<option value="Tanggal Berapa Kamu Lahir">Tanggal Berapa Kamu Lahir ? </option>
 							<option value="Dimanakah Kamu Lahir">Dimanakah Kamu Lahir</option>
 							<option value="Apa Zodiak Mu">Apa Zodiakmu ?</option>
@@ -86,7 +111,7 @@
 
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button type="submit" class="login100-form-btn">
 							Daftar
 						</button>
 					</div>
