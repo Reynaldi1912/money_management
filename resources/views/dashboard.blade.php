@@ -60,7 +60,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-4 col-xl-4">
-                                        <div class="d-flex align-items-center justify-content-around p-2">
+                                        <div class="d-flex align-items-center justify-content-center p-2">
                                             <div class="ms-3 text-center">
                                                 <h5 class="mb-2">Pengeluaran</h5>
                                                 <span class="mb-0 text-danger">Rp. 5.000.000</span>
@@ -76,36 +76,39 @@
                                         </div>
                                     </div>
                                 </div>
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th style="width: 20px;">No.</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Email</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>jhon@email.com</td>
-                                        </tr>
-                                        <tr>
-                                            <th>2</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>mark@email.com</td>
-                                        </tr>
-                                        <tr>
-                                            <th>3</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>jacob@email.com</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">Tanggal</th>
+                                                <th class="text-center">Kategori</th>
+                                                <th class="text-center">Pemasukan</th>
+                                                <th class="text-center">Pengeluaran</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="row text-center" style="border: solid;">
+                                                        <div class="col-sm-6" style="border: solid;">
+                                                            <h1>29</h1>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">Januari 2024</div>
+                                                                <div class="col-sm-12">
+                                                                    <div class="btn btn-secondary">Sabtu</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </th>
+                                                <td class="text-center">
+                                                </td>
+                                                <td class="text-center">Doe</td>
+                                                <td class="text-center">jhon@email.com</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="nav-mingguan" role="tabpanel" aria-labelledby="nav-mingguan-tab">
                                 Mingguan
@@ -123,9 +126,5 @@
         </div>
     </div>
 </div>
-
-<!-- Footer Start -->
-@include('layouts.footer')
-<!-- Footer End -->
 </div>
 @endsection('content')
