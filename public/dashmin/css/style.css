@@ -11,12 +11,25 @@
     background-color: #dc3545;
 }
 
+table{
+    height: 100%;
+    width: 100%;
+}
+table thead tr th{
+    width: 25%;
+}
+table tbody tr td{
+    height: 100%;
+}
 /********** Template CSS **********/
 :root {
-    --primary: #009cff;
     --light: #f3f6f9;
-    --dark: #191c24;
+    --primary: #009cff;
+    --darkprimary: #6895D2;
     --danger: #dc3545;
+    --lightwarning: #FDE767;
+    --warning: #F3B95F;
+    --dark: #191c24;
 }
 
 .back-to-top {
