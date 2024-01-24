@@ -1,3 +1,7 @@
+$("#datepicker").datepicker({
+    uiLibrary: "bootstrap5",
+});
+
 (function ($) {
     "use strict";
 
