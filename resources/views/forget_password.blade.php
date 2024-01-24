@@ -103,7 +103,7 @@
 							Belum Punya Akun ?
 						</a>
 						<br>
-						<a class="txt1" href="/forget-password">
+						<a class="txt1" href="#">
 							Lupa Password ?
 						</a>
 					</div>
