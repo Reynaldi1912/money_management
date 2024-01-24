@@ -85,6 +85,7 @@
                                                 <th class="text-center thead">Kategori</th>
                                                 <th class="text-center thead">Pemasukan</th>
                                                 <th class="text-center thead">Pengeluaran</th>
+                                                <th class="text-center thead">Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -100,57 +101,21 @@
                                                     </div>
                                                 </td>
                                                 <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
+                                                    <div class="text-success fw-bolder">
                                                         Rp. 12.000.000
                                                     </div>
                                                 </td>
                                                 <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
+                                                    <div class="text-danger fw-bolder">
                                                         Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
                                                     </div>
                                                 </td>
                                                 <td class="text-center align-middle text-nowrap">
                                                     <div class="btn btn-success">
-                                                        Rp. 12.000.000
+                                                        Edit
                                                     </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
                                                     <div class="btn btn-danger">
-                                                        Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
-                                                        Rp. 12.000.000
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
-                                                        Rp. 7.000.000
+                                                        Hapus
                                                     </div>
                                                 </td>
                                             </tr>
@@ -160,330 +125,12 @@
                             </div>
                             <div class="tab-pane fade text-center" id="nav-mingguan" role="tabpanel" aria-labelledby="nav-mingguan-tab">
                                 <h2>Laporan Mingguan</h2>
-                                <div class="row d-flex align-items-center justify-content-center">
-                                    <div class="col-sm-4 col-xl-4">
-                                        <div class="d-flex align-items-center justify-content-around p-2">
-                                            <div class="ms-3 text-center">
-                                                <h5 class="mb-2">Pemasukan</h5>
-                                                <span class="mb-0 text-success">Rp. 12.000.000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xl-4">
-                                        <div class="d-flex align-items-center justify-content-center p-2">
-                                            <div class="ms-3 text-center">
-                                                <h5 class="mb-2">Pengeluaran</h5>
-                                                <span class="mb-0 text-danger">Rp. 5.000.000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xl-4">
-                                        <div class="d-flex align-items-center justify-content-around p-2">
-                                            <div class="ms-3 text-center">
-                                                <h5 class="mb-2">Saldo Saat Ini</h5>
-                                                <span class="mb-0 text-primary">Rp. 7.000.000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center thead">Tanggal</th>
-                                                <th class="text-center thead">Kategori</th>
-                                                <th class="text-center thead">Pemasukan</th>
-                                                <th class="text-center thead">Pengeluaran</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
-                                                        Rp. 12.000.000
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
-                                                        Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
-                                                        Rp. 12.000.000
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
-                                                        Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
-                                                        Rp. 12.000.000
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
-                                                        Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
                             </div>
                             <div class="tab-pane fade text-center" id="nav-bulanan" role="tabpanel" aria-labelledby="nav-bulanan-tab">
                                 <h2>Laporan Bulanan</h2>
-                                <div class="row d-flex align-items-center justify-content-center">
-                                    <div class="col-sm-4 col-xl-4">
-                                        <div class="d-flex align-items-center justify-content-around p-2">
-                                            <div class="ms-3 text-center">
-                                                <h5 class="mb-2">Pemasukan</h5>
-                                                <span class="mb-0 text-success">Rp. 12.000.000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xl-4">
-                                        <div class="d-flex align-items-center justify-content-center p-2">
-                                            <div class="ms-3 text-center">
-                                                <h5 class="mb-2">Pengeluaran</h5>
-                                                <span class="mb-0 text-danger">Rp. 5.000.000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xl-4">
-                                        <div class="d-flex align-items-center justify-content-around p-2">
-                                            <div class="ms-3 text-center">
-                                                <h5 class="mb-2">Saldo Saat Ini</h5>
-                                                <span class="mb-0 text-primary">Rp. 7.000.000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center thead">Tanggal</th>
-                                                <th class="text-center thead">Kategori</th>
-                                                <th class="text-center thead">Pemasukan</th>
-                                                <th class="text-center thead">Pengeluaran</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
-                                                        Rp. 12.000.000
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
-                                                        Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
-                                                        Rp. 12.000.000
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
-                                                        Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
-                                                        Rp. 12.000.000
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
-                                                        Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
                             </div>
                             <div class="tab-pane fade text-center" id="nav-tahunan" role="tabpanel" aria-labelledby="nav-tahunan-tab">
                                 <h2>Laporan Tahunan</h2>
-                                <div class="row d-flex align-items-center justify-content-center">
-                                    <div class="col-sm-4 col-xl-4">
-                                        <div class="d-flex align-items-center justify-content-around p-2">
-                                            <div class="ms-3 text-center">
-                                                <h5 class="mb-2">Pemasukan</h5>
-                                                <span class="mb-0 text-success">Rp. 12.000.000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xl-4">
-                                        <div class="d-flex align-items-center justify-content-center p-2">
-                                            <div class="ms-3 text-center">
-                                                <h5 class="mb-2">Pengeluaran</h5>
-                                                <span class="mb-0 text-danger">Rp. 5.000.000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xl-4">
-                                        <div class="d-flex align-items-center justify-content-around p-2">
-                                            <div class="ms-3 text-center">
-                                                <h5 class="mb-2">Saldo Saat Ini</h5>
-                                                <span class="mb-0 text-primary">Rp. 7.000.000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center thead">Tanggal</th>
-                                                <th class="text-center thead">Kategori</th>
-                                                <th class="text-center thead">Pemasukan</th>
-                                                <th class="text-center thead">Pengeluaran</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
-                                                        Rp. 12.000.000
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
-                                                        Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
-                                                        Rp. 12.000.000
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
-                                                        Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-primary">
-                                                        Senin, 24 Januari 2024
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-secondary">
-                                                        Bensin
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-success">
-                                                        Rp. 12.000.000
-                                                    </div>
-                                                </td>
-                                                <td class="text-center align-middle text-nowrap">
-                                                    <div class="btn btn-danger">
-                                                        Rp. 7.000.000
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -492,6 +139,53 @@
         </div>
     </div>
 </div>
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus"></i></a>
 </div>
+
+<!-- Begin::Modal Input Pemasukan/Pengeluaran -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tambah Laporan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingPemasukan" placeholder="">
+                            <label for="floatingPemasukan">Pemasukan</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingPengeluaran" placeholder="">
+                            <label for="floatingPengeluaran">Pengeluaran</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="floatingKategori" aria-label="Floating label select example">
+                        <option selected>Pilih Kategori</option>
+                        <option value="Bensin">Bensin</option>
+                        <option value="Makan">Makan</option>
+                        <option value="Lain - Lain">Lain - Lain</option>
+                    </select>
+                    <label for="floatingKategori">Kategori</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 150px;"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End::Modal Input Pemasukan/Pengeluaran -->
 @endsection('content')
