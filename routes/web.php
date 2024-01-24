@@ -20,6 +20,7 @@ Route::post('/logout', [AuthControllers::class, 'logout'])->name('logout');
 
 Route::get('/login', [AuthControllers::class, 'login_page'])->name('page.login');
 Route::get('/register', [AuthControllers::class, 'register_page'])->name('page.register');
+Route::get('/forget-password', [AuthControllers::class, 'forget_password_page'])->name('page.forget_password');
 
 Route::post('/register', [AuthControllers::class, 'register'])->name('register');
 Route::post('/login', [AuthControllers::class, 'login'])->name('login');
