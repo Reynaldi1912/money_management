@@ -5,9 +5,95 @@
     <!-- Navbar Start -->
     @include('layouts.header')
     <!-- Navbar End -->
+    <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (min-width: 768px) {
+        .mobileInfo {
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        .desktopInfo {
+            display: none;
+        }
+    }
+    div.scrollmenu {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    div.scrollmenu a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    div.scrollmenu a:hover {
+        background-color: #ff05ea;
+    }
+  </style>
 
     <div class="container-fluid pt-4 px-4">
-        <div class="row g-4">
+        <swiper-container class="mobileInfo" pagination="true" pagination-dynamic-bullets="true">
+            <swiper-slide class="rounded" style="background: linear-gradient(to right, #7300ff 35%, #ff05ea 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center;">
+                <div class="row text-white">
+                    <div class="col-6 text-start" style="font-weight:300;font-size:20px">
+                        Total Saldo 
+                    </div>
+                    <div class="col-6 text-end pt-1" style="font-weight:200;font-size:15px">
+                        25 Januari 2024
+                    </div>
+                    <div class="col mt-4" style="font-weight:bold;font-size:30px">
+                        Rp.10.000.000
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="rounded" style="background: linear-gradient(to right, #27a825 35%, #04ff00 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center;">
+                <div class="row text-white">
+                    <div class="col-7 text-start" style="font-weight:300;font-size:20px">
+                        Pemasukan 
+                    </div>
+                    <div class="col-5 text-end pt-1" style="font-weight:200;font-size:15px">
+                        25 Januari 2024
+                    </div>
+                    <div class="col mt-4" style="font-weight:bold;font-size:30px">
+                        Rp.10.000.000
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="rounded" style="background: linear-gradient(to right, #ad1e02 35%, #ff2a00 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center;">
+                <div class="row text-white">
+                    <div class="col-7 text-start" style="font-weight:300;font-size:20px">
+                        Pengeluaran 
+                    </div>
+                    <div class="col-5 text-end pt-1" style="font-weight:200;font-size:15px">
+                        25 Januari 2024
+                    </div>
+                    <div class="col mt-4" style="font-weight:bold;font-size:30px">
+                        Rp.10.000.000
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+        <div class="row g-4 desktopInfo">
             <div class="col-sm-6 col-xl-4">
                 <div class="bg-light rounded d-flex align-items-center justify-content-around p-4">
                     <i class="fa fa-chart-line fa-3x text-success"></i>
@@ -36,17 +122,18 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid pt-4 px-4">
+
+        <div class="container-fluid pt-4 px-4 desktopInfo">
             <div class="row g-4 pt-2">
                 <ul class="nav nav-pills mb-3 d-flex justify-content-center align-items-center" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-harian-tab" data-bs-toggle="pill" data-bs-target="#pills-harian" type="button" role="tab" aria-controls="pills-harian" aria-selected="true">Laporan Harian</button>
+                        <button class="nav-link active" id="pills-harian-tab" data-bs-toggle="pill" data-bs-target="#pills-harian" type="button" role="tab" aria-controls="pills-harian" aria-selected="true">Harian</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-mingguan-tab" data-bs-toggle="pill" data-bs-target="#pills-mingguan" type="button" role="tab" aria-controls="pills-mingguan" aria-selected="false">Laporan Mingguan</button>
+                        <button class="nav-link" id="pills-mingguan-tab" data-bs-toggle="pill" data-bs-target="#pills-mingguan" type="button" role="tab" aria-controls="pills-mingguan" aria-selected="false">Mingguan</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-bulanan-tab" data-bs-toggle="pill" data-bs-target="#pills-bulanan" type="button" role="tab" aria-controls="pills-bulanan" aria-selected="false">Laporan Bulanan</button>
+                        <button class="nav-link" id="pills-bulanan-tab" data-bs-toggle="pill" data-bs-target="#pills-bulanan" type="button" role="tab" aria-controls="pills-bulanan" aria-selected="false">Bulanan</button>
                     </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
@@ -275,8 +362,116 @@
                 </div>
             </div>
         </div>
+
+        <div class="mobileInfo mt-4">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Harian</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Mingguan</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Bulanan</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                   <input type="date" class="form-control">
+                   <hr>
+                   <div class="container-fluid mobileInfo mt-3">
+                        <div class="row d-flex justify-content-around">
+                            <div class="col-5 rounded p-2 text-white text-center" style="background:#ff2a00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <i class="fa fa-arrow-down fa-1x"></i>
+                            <br>
+                                <span>- Rp.10.000</span>
+                            </div>
+                            <div class="col-5 text-center text-white rounded p-2" style="background:#07bd00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <i class="fa fa-arrow-up fa-1x"></i>
+                                <br>
+                                <span>+ Rp.20.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="mt-3 text-primary"">Semua Transaksi</h6>
+                    <div class="border rounded mb-2 mt-3">
+                        <div class="row p-3">
+                            <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Makanan</a>
+                            <div class="col-5 text-end mt-1 text-danger">- Rp.2.000.000</div>
+                        </div>
+                    </div>
+                    <div class="border rounded">
+                        <div class="row p-3">
+                            <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Belanja</a>
+                            <div class="col-5 text-end mt-1 text-success">+ Rp.2.000.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <input type="week" class="form-control">
+                    <hr>
+                    <div class="container-fluid mobileInfo mt-3">
+                        <div class="row d-flex justify-content-around">
+                            <div class="col-5 rounded p-2 text-white text-center" style="background:#ff2a00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <i class="fa fa-arrow-down fa-1x"></i>
+                            <br>
+                                <span>- Rp.10.000</span>
+                            </div>
+                            <div class="col-5 text-center text-white rounded p-2" style="background:#07bd00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <i class="fa fa-arrow-up fa-1x"></i>
+                                <br>
+                                <span>+ Rp.20.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="mt-3 text-primary">Semua Transaksi</h6>
+                    <div class="border rounded mb-2 mt-2">
+                        <div class="row p-3">
+                            <a data-bs-toggle="modal" data-bs-target="#showDetail" class="col-7" style="color: #ff00fb; font-weight: bold; font-size: 17px;">
+                                Food <br> <span style="font-size: 15px; font-weight: 100; color: #000;">1 January 2024</span>
+                            </a>
+                            <div class="col-5 d-flex align-items-center text-end text-danger">- Rp.200.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <input type="month" class="form-control">
+                    <hr>
+                    <div class="container-fluid mobileInfo mt-3">
+                        <div class="row d-flex justify-content-around">
+                            <div class="col-5 rounded p-2 text-white text-center" style="background:#ff2a00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <i class="fa fa-arrow-down fa-1x"></i>
+                            <br>
+                                <span>- Rp.10.000</span>
+                            </div>
+                            <div class="col-5 text-center text-white rounded p-2" style="background:#07bd00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <i class="fa fa-arrow-up fa-1x"></i>
+                                <br>
+                                <span>+ Rp.20.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="mt-3 text-primary"">Semua Transaksi</h6>
+                    <div class="border rounded mb-2">
+                        <div class="row p-3">
+                            <a data-bs-toggle="modal" data-bs-target="#showDetail" class="col-7" style="color: #ff00fb; font-weight: bold; font-size: 17px;">
+                                Food <br> <span style="font-size: 15px; font-weight: 100; color: #000;">1 January 2024</span>
+                            </a>
+                            <div class="col-5 d-flex align-items-center text-end text-danger">- Rp.200.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
+
+
+
+
+
+
 
 <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" data-bs-toggle="modal" data-bs-target="#tambahData"><i class="bi bi-plus"></i></a>
 </div>
@@ -411,4 +606,7 @@
     </div>
 </div>
 <!-- End::Modal My Profil -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 @endsection('content')
