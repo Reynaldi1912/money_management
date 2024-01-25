@@ -18,3 +18,49 @@
         </div>
     </div>
 </nav>
+
+<style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (min-width: 768px) {
+        .mobileInfo {
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        .desktopInfo {
+            display: none;
+        }
+    }
+    div.scrollmenu {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    div.scrollmenu a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    div.scrollmenu a:hover {
+        background-color: #ff05ea;
+    }
+  </style>

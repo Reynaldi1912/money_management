@@ -5,52 +5,6 @@
     <!-- Navbar Start -->
     @include('layouts.header')
     <!-- Navbar End -->
-    <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-
-    swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    @media (min-width: 768px) {
-        .mobileInfo {
-            display: none;
-        }
-    }
-    @media (max-width: 768px) {
-        .desktopInfo {
-            display: none;
-        }
-    }
-    div.scrollmenu {
-        overflow: auto;
-        white-space: nowrap;
-    }
-
-    div.scrollmenu a {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px;
-        text-decoration: none;
-    }
-
-    div.scrollmenu a:hover {
-        background-color: #ff05ea;
-    }
-  </style>
-
     <div class="container-fluid pt-4 px-4">
         <swiper-container class="mobileInfo" pagination="true" pagination-dynamic-bullets="true">
             <swiper-slide class="rounded" style="background: linear-gradient(to right, #7300ff 35%, #ff05ea 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center;">
