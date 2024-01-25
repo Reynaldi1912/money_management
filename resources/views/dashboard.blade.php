@@ -9,40 +9,58 @@
         <swiper-container class="mobileInfo" pagination="true" pagination-dynamic-bullets="true">
             <swiper-slide class="rounded" style="background: linear-gradient(to right, #7300ff 35%, #ff05ea 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center;">
                 <div class="row text-white">
-                    <div class="col-6 text-start" style="font-weight:300;font-size:20px">
+                    <div class="col-6">
+                    {{ \Carbon\Carbon::now()->format('d M Y') }}
+                    </div>
+                    <div class="col-6 text-end">
+                        Hari ke-2
+                    </div>
+                    <div class="col-12 text-start mt-4" style="font-weight:bold;font-size:20px">
                         Total Saldo 
                     </div>
-                    <div class="col-6 text-end pt-1" style="font-weight:200;font-size:15px">
-                        25 Januari 2024
-                    </div>
-                    <div class="col mt-4" style="font-weight:bold;font-size:30px">
+                    <div class="col" style="font-weight:bold;font-size:30px">
                         Rp.10.000.000
+                    </div>
+                    <div class="col-12 mt-4">
+                    {{ ucwords(Auth()->user()->name) }}
                     </div>
                 </div>
             </swiper-slide>
             <swiper-slide class="rounded" style="background: linear-gradient(to right, #27a825 35%, #04ff00 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center;">
                 <div class="row text-white">
-                    <div class="col-7 text-start" style="font-weight:300;font-size:20px">
-                        Pemasukan 
+                    <div class="col-6">
+                    {{ \Carbon\Carbon::now()->format('d M Y') }}
                     </div>
-                    <div class="col-5 text-end pt-1" style="font-weight:200;font-size:15px">
-                        25 Januari 2024
+                    <div class="col-6 text-end">
+                        Hari ke-2
                     </div>
-                    <div class="col mt-4" style="font-weight:bold;font-size:30px">
+                    <div class="col-12 text-start mt-4" style="font-weight:bold;font-size:20px">
+                        Total Pemasukan 
+                    </div>
+                    <div class="col" style="font-weight:bold;font-size:30px">
                         Rp.10.000.000
+                    </div>
+                    <div class="col-12 mt-4">
+                    {{ ucwords(Auth()->user()->name) }}
                     </div>
                 </div>
             </swiper-slide>
             <swiper-slide class="rounded" style="background: linear-gradient(to right, #ad1e02 35%, #ff2a00 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center;">
                 <div class="row text-white">
-                    <div class="col-7 text-start" style="font-weight:300;font-size:20px">
-                        Pengeluaran 
+                    <div class="col-6">
+                    {{ \Carbon\Carbon::now()->format('d M Y') }}
                     </div>
-                    <div class="col-5 text-end pt-1" style="font-weight:200;font-size:15px">
-                        25 Januari 2024
+                    <div class="col-6 text-end">
+                        Hari ke-2
                     </div>
-                    <div class="col mt-4" style="font-weight:bold;font-size:30px">
+                    <div class="col-12 text-start mt-4" style="font-weight:bold;font-size:20px">
+                        Total Pengeluaran 
+                    </div>
+                    <div class="col" style="font-weight:bold;font-size:30px">
                         Rp.10.000.000
+                    </div>
+                    <div class="col-12 mt-4">
+                    {{ ucwords(Auth()->user()->name) }}
                     </div>
                 </div>
             </swiper-slide>
@@ -527,19 +545,19 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingNamaLengkap" placeholder="" value="Zidane Putra Sanjaya">
+                            <input type="text" class="form-control" id="floatingNamaLengkap" placeholder="" value="{{ ucwords(Auth()->user()->name) }}">
                             <label for="floatingNamaLengkap">Nama Lengkap</label>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-floating mb-3">
-                            <input type="username" class="form-control" id="floatingUsername" placeholder="" value="zidanesanjaya">
+                            <input type="username" class="form-control" id="floatingUsername" placeholder="" value="{{ ucwords(Auth()->user()->username) }}">
                             <label for="floatingUsername">Username</label>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="" value="lumajang">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="" value="">
                             <label for="floatingPassword">Password</label>
                         </div>
                     </div>
