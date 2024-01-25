@@ -318,7 +318,7 @@
         </div>
 
         <div class="mobileInfo mt-4">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Harian</button>
                 </li>
@@ -331,22 +331,15 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                   <input type="date" class="form-control">
-                   <hr>
-                   <div class="container-fluid mobileInfo mt-3">
-                        <div class="row d-flex justify-content-around">
-                            <div class="col-5 rounded p-2 text-white text-center" style="background:#ff2a00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <i class="fa fa-arrow-down fa-1x"></i>
-                            <br>
-                                <span>- Rp.10.000</span>
-                            </div>
-                            <div class="col-5 text-center text-white rounded p-2" style="background:#07bd00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                                <i class="fa fa-arrow-up fa-1x"></i>
-                                <br>
-                                <span>+ Rp.20.000</span>
-                            </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-6 text-end">
+                            <button class="btn btn-primary">Tampilkan Semua</button>
                         </div>
                     </div>
+                   <hr>
                     <h6 class="mt-3 text-primary"">Semua Transaksi</h6>
                     <div class="border rounded mb-2 mt-3">
                         <div class="row p-3">
