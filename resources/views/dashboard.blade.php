@@ -10,57 +10,57 @@
             <swiper-slide class="rounded" style="background: linear-gradient(to right, #7300ff 35%, #ff05ea 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center;">
                 <div class="row text-white">
                     <div class="col-6">
-                    {{ \Carbon\Carbon::now()->format('d M Y') }}
+                        {{ \Carbon\Carbon::now()->format('d M Y') }}
                     </div>
                     <div class="col-6 text-end">
                         Hari ke-2
                     </div>
                     <div class="col-12 text-start mt-4" style="font-weight:bold;font-size:20px">
-                        Total Saldo 
+                        Total Saldo
                     </div>
                     <div class="col" style="font-weight:bold;font-size:30px">
                         Rp.10.000.000
                     </div>
                     <div class="col-12 mt-4">
-                    {{ ucwords(Auth()->user()->name) }}
+                        {{ ucwords(Auth()->user()->name) }}
                     </div>
                 </div>
             </swiper-slide>
             <swiper-slide class="rounded" style="background: linear-gradient(to right, #27a825 35%, #04ff00 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center;">
                 <div class="row text-white">
                     <div class="col-6">
-                    {{ \Carbon\Carbon::now()->format('d M Y') }}
+                        {{ \Carbon\Carbon::now()->format('d M Y') }}
                     </div>
                     <div class="col-6 text-end">
                         Hari ke-2
                     </div>
                     <div class="col-12 text-start mt-4" style="font-weight:bold;font-size:20px">
-                        Total Pemasukan 
+                        Total Pemasukan
                     </div>
                     <div class="col" style="font-weight:bold;font-size:30px">
                         Rp.10.000.000
                     </div>
                     <div class="col-12 mt-4">
-                    {{ ucwords(Auth()->user()->name) }}
+                        {{ ucwords(Auth()->user()->name) }}
                     </div>
                 </div>
             </swiper-slide>
             <swiper-slide class="rounded" style="background: linear-gradient(to right, #ad1e02 35%, #ff2a00 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; display: flex; flex-direction: column; justify-content: center;">
                 <div class="row text-white">
                     <div class="col-6">
-                    {{ \Carbon\Carbon::now()->format('d M Y') }}
+                        {{ \Carbon\Carbon::now()->format('d M Y') }}
                     </div>
                     <div class="col-6 text-end">
                         Hari ke-2
                     </div>
                     <div class="col-12 text-start mt-4" style="font-weight:bold;font-size:20px">
-                        Total Pengeluaran 
+                        Total Pengeluaran
                     </div>
                     <div class="col" style="font-weight:bold;font-size:30px">
                         Rp.10.000.000
                     </div>
                     <div class="col-12 mt-4">
-                    {{ ucwords(Auth()->user()->name) }}
+                        {{ ucwords(Auth()->user()->name) }}
                     </div>
                 </div>
             </swiper-slide>
@@ -357,79 +357,79 @@
                             <button class="btn btn-primary">Tampilkan Semua</button>
                         </div>
                     </div>
-                   <hr>
+                    <hr>
                     <h6 class="mt-3 text-primary"">Semua Transaksi</h6>
-                    <div class="border rounded mb-2 mt-3">
+                    <div class=" border rounded mb-2 mt-3">
                         <div class="row p-3">
                             <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Makanan</a>
                             <div class="col-5 text-end mt-1 text-danger">- Rp.2.000.000</div>
                         </div>
-                    </div>
-                    <div class="border rounded">
-                        <div class="row p-3">
-                            <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Belanja</a>
-                            <div class="col-5 text-end mt-1 text-success">+ Rp.2.000.000</div>
-                        </div>
-                    </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <input type="week" class="form-control">
-                    <hr>
-                    <div class="container-fluid mobileInfo mt-3">
-                        <div class="row d-flex justify-content-around">
-                            <div class="col-5 rounded p-2 text-white text-center" style="background:#ff2a00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <i class="fa fa-arrow-down fa-1x"></i>
-                            <br>
-                                <span>- Rp.10.000</span>
-                            </div>
-                            <div class="col-5 text-center text-white rounded p-2" style="background:#07bd00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                                <i class="fa fa-arrow-up fa-1x"></i>
-                                <br>
-                                <span>+ Rp.20.000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h6 class="mt-3 text-primary">Semua Transaksi</h6>
-                    <div class="border rounded mb-2 mt-2">
-                        <div class="row p-3">
-                            <a data-bs-toggle="modal" data-bs-target="#showDetail" class="col-7" style="color: #ff00fb; font-weight: bold; font-size: 17px;">
-                                Food <br> <span style="font-size: 15px; font-weight: 100; color: #000;">1 January 2024</span>
-                            </a>
-                            <div class="col-5 d-flex align-items-center text-end text-danger">- Rp.200.000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    <input type="month" class="form-control">
-                    <hr>
-                    <div class="container-fluid mobileInfo mt-3">
-                        <div class="row d-flex justify-content-around">
-                            <div class="col-5 rounded p-2 text-white text-center" style="background:#ff2a00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <i class="fa fa-arrow-down fa-1x"></i>
-                            <br>
-                                <span>- Rp.10.000</span>
-                            </div>
-                            <div class="col-5 text-center text-white rounded p-2" style="background:#07bd00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                                <i class="fa fa-arrow-up fa-1x"></i>
-                                <br>
-                                <span>+ Rp.20.000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h6 class="mt-3 text-primary"">Semua Transaksi</h6>
-                    <div class="border rounded mb-2">
-                        <div class="row p-3">
-                            <a data-bs-toggle="modal" data-bs-target="#showDetail" class="col-7" style="color: #ff00fb; font-weight: bold; font-size: 17px;">
-                                Food <br> <span style="font-size: 15px; font-weight: 100; color: #000;">1 January 2024</span>
-                            </a>
-                            <div class="col-5 d-flex align-items-center text-end text-danger">- Rp.200.000</div>
-                        </div>
+                <div class="border rounded">
+                    <div class="row p-3">
+                        <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Belanja</a>
+                        <div class="col-5 text-end mt-1 text-success">+ Rp.2.000.000</div>
                     </div>
                 </div>
             </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <input type="week" class="form-control">
+                <hr>
+                <div class="container-fluid mobileInfo mt-3">
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-5 rounded p-2 text-white text-center" style="background:#ff2a00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <i class="fa fa-arrow-down fa-1x"></i>
+                            <br>
+                            <span>- Rp.10.000</span>
+                        </div>
+                        <div class="col-5 text-center text-white rounded p-2" style="background:#07bd00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <i class="fa fa-arrow-up fa-1x"></i>
+                            <br>
+                            <span>+ Rp.20.000</span>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="mt-3 text-primary">Semua Transaksi</h6>
+                <div class="border rounded mb-2 mt-2">
+                    <div class="row p-3">
+                        <a data-bs-toggle="modal" data-bs-target="#showDetail" class="col-7" style="color: #ff00fb; font-weight: bold; font-size: 17px;">
+                            Food <br> <span style="font-size: 15px; font-weight: 100; color: #000;">1 January 2024</span>
+                        </a>
+                        <div class="col-5 d-flex align-items-center text-end text-danger">- Rp.200.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <input type="month" class="form-control">
+                <hr>
+                <div class="container-fluid mobileInfo mt-3">
+                    <div class="row d-flex justify-content-around">
+                        <div class="col-5 rounded p-2 text-white text-center" style="background:#ff2a00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <i class="fa fa-arrow-down fa-1x"></i>
+                            <br>
+                            <span>- Rp.10.000</span>
+                        </div>
+                        <div class="col-5 text-center text-white rounded p-2" style="background:#07bd00; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <i class="fa fa-arrow-up fa-1x"></i>
+                            <br>
+                            <span>+ Rp.20.000</span>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="mt-3 text-primary"">Semua Transaksi</h6>
+                    <div class=" border rounded mb-2">
+                    <div class="row p-3">
+                        <a data-bs-toggle="modal" data-bs-target="#showDetail" class="col-7" style="color: #ff00fb; font-weight: bold; font-size: 17px;">
+                            Food <br> <span style="font-size: 15px; font-weight: 100; color: #000;">1 January 2024</span>
+                        </a>
+                        <div class="col-5 d-flex align-items-center text-end text-danger">- Rp.200.000</div>
+                    </div>
+            </div>
         </div>
-
     </div>
+</div>
+
+</div>
 </div>
 
 
@@ -464,18 +464,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-floating mb-3">
-                    <select class="form-select" id="floatingKategori" aria-label="Floating label select example">
-                        <option selected>Pilih Kategori</option>
-                        <option value="Bensin">Bensin</option>
-                        <option value="Makan">Makan</option>
-                        <option value="Lain - Lain">Lain - Lain</option>
-                    </select>
-                    <label for="floatingKategori">Kategori</label>
-                </div>
-                <div class="form-floating">
-                    <input type="date" class="form-control" id="floatingTanggal" placeholder="">
-                    <label for="floatingTanggal">Tanggal</label>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingKategori" placeholder="">
+                            <label for="floatingKategori">Kategori</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="floatingTanggal" placeholder="">
+                            <label for="floatingTanggal">Tanggal</label>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -510,18 +511,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-floating mb-3">
-                    <select class="form-select" id="floatingKategori" aria-label="Floating label select example">
-                        <option selected>Pilih Kategori</option>
-                        <option value="Bensin">Bensin</option>
-                        <option value="Makan">Makan</option>
-                        <option value="Lain - Lain">Lain - Lain</option>
-                    </select>
-                    <label for="floatingKategori">Kategori</label>
-                </div>
-                <div class="form-floating">
-                    <input type="date" class="form-control" id="floatingTanggal" placeholder="">
-                    <label for="floatingTanggal">Tanggal</label>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingKategori" placeholder="">
+                            <label for="floatingKategori">Kategori</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="floatingTanggal" placeholder="">
+                            <label for="floatingTanggal">Tanggal</label>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
