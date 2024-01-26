@@ -373,7 +373,7 @@
                         </div>
                     </div>
                     <hr>
-                    <h6 class="mt-3 text-primary"">Semua Transaksi</h6>
+                    <h6 class="mt-3 text-primary">Semua Transaksi</h6>
                     <div class=" row">
                         <div class="col-sm-12">
                             <div class=" border rounded mb-2 mt-3">
@@ -395,97 +395,97 @@
                                 </div>
                             </div>
                         </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <input type="week" class="form-control">
-                <hr>
-                <div class="container-fluid mobileInfo mt-3">
-                    <div class="row d-flex justify-content-around">
-                        <div class="col-5 rounded p-2 text-white text-center bg-danger" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <i class="fa fa-arrow-down fa-1x"></i>
-                            <br>
-                            <span>- Rp.10.000</span>
-                        </div>
-                        <div class="col-5 text-center text-white rounded p-2 bg-success" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <i class="fa fa-arrow-up fa-1x"></i>
-                            <br>
-                            <span>+ Rp.20.000</span>
-                        </div>
                     </div>
                 </div>
-                <hr>
-                <h6 class="mt-3 text-primary"">Semua Transaksi</h6>
-                <div class=" row">
-                    <div class="col-sm-12">
-                        <div class=" border rounded mb-2 mt-3">
-                            <div class="row p-3">
-                                <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Food</a>
-                                <div class="col-5 text-end mt-1 text-danger">
-                                    - Rp.2.000.000
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <input type="week" class="form-control">
+                    <hr>
+                    <div class="container-fluid mobileInfo mt-3">
+                        <div class="row d-flex justify-content-around">
+                            <div class="col-5 rounded p-2 text-white text-center bg-danger" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <i class="fa fa-arrow-down fa-1x"></i>
+                                <br>
+                                <span>- Rp.10.000</span>
+                            </div>
+                            <div class="col-5 text-center text-white rounded p-2 bg-success" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <i class="fa fa-arrow-up fa-1x"></i>
+                                <br>
+                                <span>+ Rp.20.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h6 class="mt-3 text-primary">Semua Transaksi</h6>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class=" border rounded mb-2 mt-3">
+                                <div class="row p-3">
+                                    <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Food</a>
+                                    <div class="col-5 text-end mt-1 text-danger">
+                                        - Rp.2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="border rounded">
+                                <div class="row p-3">
+                                    <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Drink</a>
+                                    <div class="col-5 text-end mt-1 text-success">
+                                        + Rp.2.000.000
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <div class="border rounded">
-                            <div class="row p-3">
-                                <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Drink</a>
-                                <div class="col-5 text-end mt-1 text-success">
-                                    + Rp.2.000.000
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <input type="month" class="form-control">
+                    <hr>
+                    <div class="container-fluid mobileInfo mt-3">
+                        <div class="row d-flex justify-content-around">
+                            <div class="col-5 rounded p-2 text-white text-center bg-danger" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <i class="fa fa-arrow-down fa-1x"></i>
+                                <br>
+                                <span>- Rp.10.000</span>
+                            </div>
+                            <div class="col-5 text-center text-white rounded p-2 bg-success" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <i class="fa fa-arrow-up fa-1x"></i>
+                                <br>
+                                <span>+ Rp.20.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h6 class="mt-3 text-primary">Semua Transaksi</h6>
+                    <div class=" row">
+                        <div class="col-sm-12">
+                            <div class=" border rounded mb-2 mt-3">
+                                <div class="row p-3">
+                                    <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Drink</a>
+                                    <div class="col-5 text-end mt-1 text-danger">
+                                        - Rp.2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="border rounded">
+                                <div class="row p-3">
+                                    <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Other</a>
+                                    <div class="col-5 text-end mt-1 text-success">
+                                        + Rp.2.000.000
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-            </div>
-        </div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-            <input type="month" class="form-control">
-            <hr>
-            <div class="container-fluid mobileInfo mt-3">
-                <div class="row d-flex justify-content-around">
-                    <div class="col-5 rounded p-2 text-white text-center bg-danger" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <i class="fa fa-arrow-down fa-1x"></i>
-                        <br>
-                        <span>- Rp.10.000</span>
-                    </div>
-                    <div class="col-5 text-center text-white rounded p-2 bg-success" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <i class="fa fa-arrow-up fa-1x"></i>
-                        <br>
-                        <span>+ Rp.20.000</span>
-                    </div>
                 </div>
             </div>
-            <hr>
-            <h6 class="mt-3 text-primary"">Semua Transaksi</h6>
-            <div class=" row">
-                <div class="col-sm-12">
-                    <div class=" border rounded mb-2 mt-3">
-                        <div class="row p-3">
-                            <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Drink</a>
-                            <div class="col-5 text-end mt-1 text-danger">
-                                - Rp.2.000.000
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12">
-                    <div class="border rounded">
-                        <div class="row p-3">
-                            <a data-bs-toggle="modal" data-bs-target="#editData" class="col-7" style="color: #ff9d00; font-weight: bold; font-size: 17px;">Other</a>
-                            <div class="col-5 text-end mt-1 text-success">
-                                + Rp.2.000.000
-                            </div>
-                        </div>
-                    </div>
-                </div>
         </div>
-    </div>
-</div>
-</div>
 
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" data-bs-toggle="modal" data-bs-target="#tambahData"><i class="bi bi-plus"></i></a>
-</div>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" data-bs-toggle="modal" data-bs-target="#tambahData"><i class="bi bi-plus"></i></a>
+    </div>
 </div>
 
 <!-- Begin::Modal Input Pemasukan/Pengeluaran -->
