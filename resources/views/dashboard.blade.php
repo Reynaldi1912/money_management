@@ -539,32 +539,35 @@
                 <h5 class="modal-title" id="exampleModalLabel">My Profile</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingNamaLengkap" placeholder="" value="{{ ucwords(Auth()->user()->name) }}">
-                            <label for="floatingNamaLengkap">Nama Lengkap</label>
+            <form action="{{route('update.profile')}}" method="post">
+            @csrf
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" name="full_name" class="form-control" id="floatingNamaLengkap" placeholder="" value="{{ ucwords(Auth()->user()->name) }}">
+                                <label for="floatingNamaLengkap">Nama Lengkap</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-floating mb-3">
-                            <input type="username" class="form-control" id="floatingUsername" placeholder="" value="{{ ucwords(Auth()->user()->username) }}">
-                            <label for="floatingUsername">Username</label>
+                        <div class="col-sm-6">
+                            <div class="form-floating mb-3">
+                                <input type="username" name="username" class="form-control" id="floatingUsername" placeholder="" value="{{ Auth()->user()->username }}">
+                                <label for="floatingUsername">Username</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingPassword" placeholder="" value="">
-                            <label for="floatingPassword">Password</label>
+                        <div class="col-sm-6">
+                            <div class="form-floating mb-3">
+                                <input type="text"  name="password" class="form-control" id="floatingPassword" placeholder="" value="">
+                                <label for="floatingPassword">Password</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Submit</button>
-            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

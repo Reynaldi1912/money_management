@@ -20,6 +20,34 @@ class HomeControllers extends Controller
         return view('dashboard');
     }
 
+    public function update_profile(Request $request){
+        $username = $request->username;
+        $full_name = $request->full_name;
+        $password = $request->password;
+        $data = DB::table('users')->where('username',$username)->first();
+
+        $username_now = Auth::user()->username;
+        if($data && $data->username != $username_now ){
+            return back()->with('error' , 'Gagal Update Data , Username Sudah Ada');
+        }else{
+            if($password && $password != null && $password != ''){
+                DB::table('users')->where('id',Auth::user()->id)->update([
+                    'name' => $full_name,
+                    'username' => $username,
+                    'password' => md5($password),
+                ]);
+            }else{
+                DB::table('users')->where('id',Auth::user()->id)->update([
+                    'name' => $full_name,
+                    'username' => $username,
+                    
+                ]);
+            }
+        }
+       
+        return back()->with('success','Berhasil Update Profile');
+    }
+
     public function post_transaction(Request $request){
         DB::beginTransaction();
         try{
@@ -49,8 +77,8 @@ class HomeControllers extends Controller
                 'date' => $request->date
             ]);
         DB::commit();
-        return redirect()->route('/')->with('success','Berhasil Update Data');
-        }catch(Exception $e){
+        return redirect('/')->with('success', 'Berhasil Update Data');
+    }catch(Exception $e){
         DB::rollback();
         return back()->with('error','Gagal Update Data');
         }

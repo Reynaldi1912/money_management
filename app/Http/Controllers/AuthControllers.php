@@ -21,6 +21,8 @@ class AuthControllers extends Controller
     public function register_page(){
         return view('register');
     }
+
+   
     public function register(Request $request){
         $username = $request->username;
         $full_name = $request->full_name;
@@ -76,4 +78,21 @@ class AuthControllers extends Controller
     public function forget_password_page(){
         return view('forget_password');
     }
+
+    public function forget_password_post(Request $request){
+        $check = DB::table('users')->where('username',$request->username)->first();
+        if($check){
+            return view('step_2',['pertanyaan'=>$check->question , 'username'=> $check->username]);
+        }else{
+            return back()->with('error','Username Tidak Ditemukan');
+        }
+    }
+    public function forget_password2_post(Request $request){
+        $check = DB::table('users')->where('username',$request->username)->first();
+        if(strtolower($check->answer) == strtolower($request->answer)){
+            return view('step_3',['username'=>$check->username]);
+        }
+            return view('step_2',['pertanyaan'=>$check->question , 'username'=> $check->username])->with('error','Jawaban Anda Salah');
+    }
+
 }

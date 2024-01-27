@@ -70,3 +70,32 @@
 }
 
   </style>
+
+<div class="container">
+    @if ($message = Session::get('success'))
+	        <!-- Floating Pesan untuk Sukses -->
+        <div class="alert alert-success fixed-bottom mb-3" role="alert" id="floatingMessage">
+        <span id="messageText">{{ $message }}</span>
+        <button type="button" class="btn-close float-end" aria-label="Close" onclick="closeFloatingMessage()"></button>
+        </div>
+    @endif
+
+	@if ($message = Session::get('error'))
+	        <!-- Floating Pesan untuk Sukses -->
+        <div class="alert alert-danger fixed-bottom mb-3" role="alert" id="floatingMessage">
+        <span id="messageText">{{ $message }}</span>
+        <button type="button" class="btn-close float-end" aria-label="Close" onclick="closeFloatingMessage()"></button>
+        </div>
+    @endif
+</div>
+    <script>
+        setTimeout(function() {
+            floatingMessage.style.display = 'none';
+        }, 3000);
+
+        function closeFloatingMessage() {
+            var floatingMessage = document.getElementById('floatingMessage');
+            floatingMessage.style.display = 'none';
+        }
+    </script>
+    

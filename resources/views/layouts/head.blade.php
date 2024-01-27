@@ -26,6 +26,4 @@
 
     <!-- Template Stylesheet -->
     <link href="/dashmin/css/style.css" rel="stylesheet">
-
-    
 </head>

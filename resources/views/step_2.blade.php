@@ -69,18 +69,24 @@
 			<div class="wrap-login100">
 				<!-- resources/views/login.blade.php -->
 
-				<form class="login100-form validate-form" action="{{route('post.step1')}}" method="post">
+				<form class="login100-form validate-form" action="{{route('post.step2')}}" method="post">
 					@csrf
 					<div class="d-flex justify-content-center">
 						<lottie-player src="/Login_v3/forget_password.json" background="transparent"  speed="1"  style="width: 250px; height: 250px;" loop autoplay></lottie-player>
 					</div>
 
 					<span class="login100-form-title p-b-10 p-t-27">
-						Forget Password
+						Konfirmasi Pertanyaan
 					</span>
+                    <div class="text-center bg-white">
+                        <span class="">penting : <i class="text-danger">Jika kembali kehalaman ini setelah submit maka jawaban dianggap salah!</i></span>
+                    </div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Username">
+                    <hr class="mt-4">
+                    <h5 style="font-weight:bold;" class="text-white mb-2">1 . {{$pertanyaan}} ?</h5>
+					<div class="wrap-input100 validate-input" data-validate = "Masukan Jawaban Anda">
+						<input class="input100" type="hidden" value="{{$username}}" name="username" placeholder="Masukan Jawaban Anda">
+						<input class="input100" type="text" name="answer" placeholder="Masukan Jawaban Anda">
 						<span class="focus-input100" data-placeholder="&#xf00c;"></span>
 					</div>
 
