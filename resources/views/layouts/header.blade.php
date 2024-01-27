@@ -37,16 +37,16 @@
       height: 100%;
       object-fit: cover;
     }
-    @media (min-width: 768px) {
+    /* @media (min-width: 768px) {
         .mobileInfo {
             display: none;
         }
-    }
-    @media (max-width: 768px) {
+    } */
+    /* @media (min-width: 768px) { */
         .desktopInfo {
             display: none;
         }
-    }
+    /* } */
     div.scrollmenu {
         overflow: auto;
         white-space: nowrap;
@@ -63,4 +63,10 @@
     div.scrollmenu a:hover {
         background-color: #ff05ea;
     }
+    @media (max-width: 767px) {
+    .btn-full-width {
+        width: 100%;
+    }
+}
+
   </style>

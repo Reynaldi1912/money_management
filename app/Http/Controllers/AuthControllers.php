@@ -38,7 +38,8 @@ class AuthControllers extends Controller
                     'username' => $username,
                     'password' => md5($password),
                     'question' => $pertanyaan,
-                    'answer' => $jawaban
+                    'answer' => $jawaban,
+                    'created_at' => now(),
                 ]
             );
     

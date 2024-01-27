@@ -15,7 +15,6 @@ use App\Http\Controllers\HomeControllers;
 |
 */
 
-Route::get('/', [HomeControllers::class, 'index'])->name('page.index');
 Route::post('/logout', [AuthControllers::class, 'logout'])->name('logout');
 
 Route::get('/login', [AuthControllers::class, 'login_page'])->name('page.login');
@@ -24,3 +23,8 @@ Route::get('/forget-password', [AuthControllers::class, 'forget_password_page'])
 
 Route::post('/register', [AuthControllers::class, 'register'])->name('register');
 Route::post('/login', [AuthControllers::class, 'login'])->name('login');
+Route::post('/post-transaction', [HomeControllers::class, 'post_transaction'])->name('post.transaction');
+Route::post('/udpate-transaction', [HomeControllers::class, 'update_transaction'])->name('update.transaction');
+
+Route::get('/', [HomeControllers::class, 'dashboard_page'])->name('page.dashboard');
+Route::get('/delete-transaction/{id}', [HomeControllers::class, 'delete_transaction'])->name('delete.transaction');
