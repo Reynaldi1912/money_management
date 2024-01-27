@@ -5,8 +5,8 @@
                 <img class="rounded-circle me-lg-2" src="/dashmin/img/users.png" alt="" style="width: 40px; height: 40px;">
                 <span class="d-none d-lg-inline-flex">{{ ucwords(Auth()->user()->name) }}</span>
             </a>
-            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0" data-bs-toggle="modal" data-bs-target="#myProfile">
-                <a href="#" class="dropdown-item">My Profile</a>
+            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0" >
+                <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#myProfile">My Profile</a>
                 <a href="{{ route('logout') }}" class="dropdown-item text-logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     Log Out
                 </a>
