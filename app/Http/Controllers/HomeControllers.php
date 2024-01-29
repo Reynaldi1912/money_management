@@ -59,11 +59,11 @@ class HomeControllers extends Controller
                 'note' => $request->note,
                 'date' => $request->date
             ]);
-        DB::commit();
-        return redirect()->route('/')->with('success','Berhasil Tambahkan Data');
+            DB::commit();
+            return redirect('/')->with('success','Berhasil Tambahkan Data');
         }catch(Exception $e){
-        DB::rollback();
-        return back()->with('error','Gagal Tambahkan Data');
+            DB::rollback();
+            return back()->with('error','Gagal Tambahkan Data');
         }
     }
     public function update_transaction(Request $request){
