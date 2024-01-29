@@ -7,9 +7,6 @@
 
     <link rel="icon" href="/dashmin/img/headlogo.svg" type="image/icon type">
 
-    <!-- Favicon -->
-    <link href="/dashmin/img/favicon.ico" rel="icon">
-
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
