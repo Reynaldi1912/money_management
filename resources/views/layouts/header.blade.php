@@ -37,16 +37,16 @@
       height: 100%;
       object-fit: cover;
     }
-    /* @media (min-width: 768px) {
+    @media (min-width: 768px) {
         .mobileInfo {
             display: none;
         }
-    } */
-    /* @media (min-width: 768px) { */
+    }
+    @media (max-width: 768px) {
         .desktopInfo {
             display: none;
         }
-    /* } */
+    }
     div.scrollmenu {
         overflow: auto;
         white-space: nowrap;

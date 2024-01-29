@@ -5,6 +5,8 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <link rel="icon" href="/dashmin/img/headlogo.svg" type="image/icon type">
+
     <!-- Favicon -->
     <link href="/dashmin/img/favicon.ico" rel="icon">
 
