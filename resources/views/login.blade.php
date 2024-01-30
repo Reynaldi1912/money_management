@@ -72,6 +72,14 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('/Login_v3/images/bg-01.jpg');">
 
+			<div class="row container-login100-form-btn justify-content-start">
+				<a href="">
+					<button type="submit" class="btn btn-danger border-5">
+						Kembali
+					</button>
+				</a>
+			</div>
+
 			<div class="wrap-login100">
 				<!-- resources/views/login.blade.php -->
 
